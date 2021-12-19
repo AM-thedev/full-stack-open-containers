@@ -1,0 +1,32 @@
+$ docker container ls
+$ docker exec -it todo-backend_redis_1 bash
+
+# redis-cli
+
+> KEYS added_todos
+RETURN: 1) "added_todos"
+> GET added_todos
+RETURN: "0"
+> SET added_todos 9001
+RETURN: OK
+> GET added_todos
+RETURN: "9001"
+
+POSTMAN:
+  POST http://localhost:3000/todos
+
+> GET added_todos
+RETURN: "9002"
+> DEL added_todos
+RETURN: (integer) 1
+
+POSTMAN:
+  POST http://localhost:3000/todos
+
+> GET added_todos
+RETURN "1"
+
+http://localhost:3000/statistics:
+  {
+    added_todos: "1"
+  }

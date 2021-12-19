@@ -1,0 +1,16 @@
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+my-app/library-webapp/library-frontend/build/
+todo-app/todo-frontend/build/
+
+# Dependency directories
+node_modules/
+my-app/library-webapp/library-frontend/node_modules/
+my-app/library-webapp/library-backend/node_modules/
+todo-app/todo-frontend/node_modules/
+todo-app/todo-backend/node_modules/
+
+
+# other
+todo-app/todo-backend/redis_data/
+todo-app/todo-backend/mongo_data/

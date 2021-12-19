@@ -1,0 +1,7 @@
+script exercise12_2.txt
+sudo docker run -it ubuntu bash
+[password]
+mkdir -p /usr/src/app
+cd /usr/src/app
+touch index.js
+exit

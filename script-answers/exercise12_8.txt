@@ -1,0 +1,17 @@
+$ docker-compose -f docker-compose.dev.yml up -d
+$ docker container ls
+$ docker exec -it todo-backend_mongo_1 bash
+
+
+/# mongo -u root -p example
+
+> show dbs
+> use the_database
+> show collections
+> db.todos.find({})
+> db.todos.insertOne( { "text" : "Increase the number of tools in my toolbelt", "done" : false } )
+> db.todos.find({})
+  OUTPUT:
+    { "_id" : ObjectId("61b5b0ec684d359beb658424"), "text" : "Write code", "done" : true }
+    { "_id" : ObjectId("61b5b0ec684d359beb658425"), "text" : "Learn about containers", "done" : false }
+    { "_id" : ObjectId("61b5bd0c6bb900a7ad73a920"), "text" : "Increase the number of tools in my toolbelt", "done" : false }

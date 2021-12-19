@@ -1,0 +1,4 @@
+Script started on 2021-11-17 06:21:23+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="131" LINES="16"]
+# nano /usr/src/app/index.js
+^[[?2004h^[[?1049h^[[22;0;0t^[[1;16r^[(B^[[m^[[4l^[[?7h^[[39;49m^[[?1h^[=^[[?1h^[=^[[?25l^[[39;49m^[(B^[[m^[[H^[[2J^[[14;59H^[(B^[[0;7m[ Reading... ]^[(B^[[m^[[14;58H^[(B^>
+Script done on 2021-11-17 06:25:29+00:00 [COMMAND_EXIT_CODE="0"]
